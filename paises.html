@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:black;
+        }
+        h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Verificação de Brasileiros e Estrangeiros </h1>
+    <h2>País Atual ( EUA )</h2>
+
+    País de origem: <input type="text" name="pais1" id="pais1">
+
+    <input type="button" value="Verificar" onclick="consulta()">
+
+    <div id="res"></div>
+
+    <script>
+        function consulta(){
+            var EUA = document.querySelector('input#pais1')
+
+            var res = document.querySelector('div#res')
+
+            var comum = (EUA.value)
+            res.innerHTML = ` Seu País Atual é Estados Unidos ${comum}`
+            if(comum>res )
+            res.innerHTML = `Você é ESTRANGEIRO`
+
+
+        }
+
+
+
+    </script>
+
+
+
+
+    
+</body>
+</html>

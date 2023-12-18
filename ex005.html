@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com Dom </title>
+    <style>
+        body{
+            background-color: aquamarine;
+            color: red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando com o Dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom </strong> em java script</p>
+    <div id="msg">
+        Click em mim 
+    </div>
+
+    <script>
+       var p1 = window.document.getElementsByTagName('p')[1]
+
+       
+       window.document.write(p1.innerHTML)
+       var d = window.document.querySelector('div#msg')
+       d.style.background = 'green'
+
+       
+    </script>
+    
+</body>
+</html>
