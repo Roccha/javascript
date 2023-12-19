@@ -36,11 +36,15 @@
 
             var res = document.querySelector('div#res')
 
-            var b = ('a')
+            var vel = (a.value)
 
-            res.innerHTML = ` Seu País Atual é Estados Unidos ${a}`
-            if(a > Brasil ){
-            res.innerHTML = `Você é ESTRANGEIRO`
+            res.innerHTML = ` <p>Seu País de origem é ${vel}</p>`
+            if(vel == 'Estados Unidos', 'estados unidos'){
+                
+                res.innerHTML += `<strong>Você é Americano!!</strong> `
+            } else (vel > 'Estados Unidos');{
+                res.innerHTML += ` Você é estrangeiro`
+            }
 
 
         }
