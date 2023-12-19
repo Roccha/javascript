@@ -32,24 +32,19 @@
 
     <script>
         function consulta(){
-            var a = document.querySelector('input#pais1')
+            var txtv = document.querySelector('input#pais1')
+            
+            var res = document.querySeleAbortSignalctor--('div#res')
 
-            var res = document.querySelector('div#res')
+            var vel = (txtv.value)
 
-            var vel = (a.value)
-
-            res.innerHTML = ` <p>Seu País de origem é ${vel}</p>`
-            if(vel == 'Estados Unidos', 'estados unidos'){
-                
-                res.innerHTML += `<strong>Você é Americano!!</strong> `
-            } else (vel > 'Estados Unidos');{
-                res.innerHTML += ` Você é estrangeiro`
+            res.innerHTML = ` Vivendo nos estados Unidos   ${vel}`
+            
+            if(vel == 'Brasil' ){
+                res.innerHTML += `Você é ESTRANGEIRO!`
             }
 
-
         }
-
-
 
     </script>
 
